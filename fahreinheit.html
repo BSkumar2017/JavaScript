@@ -6,7 +6,12 @@
 function f1()
 {
 var a=document.getElementById("fah").value;
-document.getElementById("demo").innerHTML= a*9/5+32;
+document.getElementById("demo").innerHTML=a*9/5+32;
+}
+function f2()
+{
+var b=document.getElementById("cel").value;
+document.getElementById("demo1").innerHTML=(b-32)*5/9;
 }
 </script>
 </head>
@@ -15,7 +20,10 @@ document.getElementById("demo").innerHTML= a*9/5+32;
 finding the fahreinheit when celsius is given:<br>
 <input type="number" id="fah"><br>
 <input type="button" value="covert" onclick="f1()"><br> 
-<p id="demo">the fahrenheit is:</p>
+<p id="demo"></p>
+<input type="number" id="cel"><br>
+<input type="button" value="convert" onclick="f2()"><br>
+<p id="demo1"></p>
 </form>
 </body>
 </html>
