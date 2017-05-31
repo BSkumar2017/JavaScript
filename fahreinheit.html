@@ -1,0 +1,21 @@
+//here we are using inner html but is was not showing the 
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f1()
+{
+var a=document.getElementById("fah").value;
+document.getElementById("demo").innerHTML= a*9/5+32;
+}
+</script>
+</head>
+<body>
+<form>
+finding the fahreinheit when celsius is given:<br>
+<input type="number" id="fah"><br>
+<input type="button" value="covert" onclick="f1()"><br> 
+<p id="demo">the fahrenheit is:</p>
+</form>
+</body>
+</html>
